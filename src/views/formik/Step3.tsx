@@ -150,7 +150,7 @@ const Step3: React.FC<StepProps> = ({ formik }) => {
         {({ open }) => {
           return (
             <div
-              onClick={open}
+              onClick={() => open()}
               className="mt-4 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:bg-gray-50 p-4"
             >
               <div className="flex items-center ml-16">
