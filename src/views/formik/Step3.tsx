@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import { StepProps } from "./types";
+import { FormValues, StepProps } from "./types";
 import { CldUploadWidget } from "next-cloudinary";
 
 const Step3: React.FC<StepProps> = ({ formik }) => {
-  const [submittedData, setSubmittedData] = useState<any>(null);
+  const [submittedData, setSubmittedData] = useState<FormValues | null>(null);
 
   // Handle form submission
   const handleSubmit = async () => {

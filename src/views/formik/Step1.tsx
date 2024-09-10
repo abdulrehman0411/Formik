@@ -3,9 +3,6 @@ import { CldUploadWidget } from "next-cloudinary";
 import { StepProps } from "./types";
 
 const Step1: React.FC<StepProps> = ({ formik }) => {
-  const handleChange = (e: { target: { files: any[] } }) => {
-    formik.setFieldValue("profileUrl", e.target.files[0]);
-  };
   const [hobbyInput, setHobbyInput] = useState("");
 
   // Add a new hobby to the Formik hobbies array
@@ -23,7 +20,7 @@ const Step1: React.FC<StepProps> = ({ formik }) => {
     );
     formik.setFieldValue("hobbies", updatedHobbies);
   };
-  const [url, setUrl] = useState("");
+
   return (
     <div>
       <h2 className="text-xl font-bold mb-6 text-center">
