@@ -4,8 +4,7 @@ import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import { FormValues } from "./types";
-import Image from "next/image";
-import logo from "@/images/logo.png";
+
 import {
   form1Schema,
   form2Schema,
@@ -64,12 +63,12 @@ const MultiStepForm: React.FC = () => {
   const [step, setStep] = useState(0);
   const handleSchema = () => {
     if (step === 0) return form1Schema;
-    // if (step === 1) return form2Schema;
-    // if (step === 2) return form3Schema;
-    // if (step === 3) return form4Schema;
-    // if (step === 4) return form5Schema;
-    // if (step === 5) return form6Schema;
-    // if (step === 6) return form7Schema;
+    if (step === 1) return form2Schema;
+    if (step === 2) return form3Schema;
+    if (step === 3) return form4Schema;
+    if (step === 4) return form5Schema;
+    if (step === 5) return form6Schema;
+    if (step === 6) return form7Schema;
   };
 
   const nextStep = async () => {

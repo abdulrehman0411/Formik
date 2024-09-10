@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { FormikProps } from "formik";
+
 import { StepProps } from "./types";
 import { CldUploadWidget } from "next-cloudinary";
-import { info } from "console";
+
 // Define the props
 
 const Step2: React.FC<StepProps> = ({ formik }) => {

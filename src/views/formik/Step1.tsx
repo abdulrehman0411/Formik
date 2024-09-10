@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { FormikProps } from "formik";
 import { CldUploadWidget } from "next-cloudinary";
 import { StepProps } from "./types";
-import { info } from "console";
 
 const Step1: React.FC<StepProps> = ({ formik }) => {
   const handleChange = (e: { target: { files: any[] } }) => {

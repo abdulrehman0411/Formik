@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormikProps } from "formik";
+
 import { StepProps } from "./types";
 import { CldUploadWidget } from "next-cloudinary";
 
