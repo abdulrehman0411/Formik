@@ -1,11 +1,7 @@
 import  * as Yup from "yup";
 
 
-const validFileExtensions:any = { image: ['jpg', 'gif', 'png', 'jpeg', 'svg', 'webp'] };
 
-function isValidFileType(fileName: string, fileType: string | number) {
-  return fileName && validFileExtensions[fileType].indexOf(fileName.split('.').pop()) > -1;
-}
 
 export const form1Schema = Yup.object({
   profileUrl: Yup.string().required("Please enter your profile image"),
