@@ -2,7 +2,7 @@
 // import React, { Fragment } from "react";
 
 // // View Import
-// import LoginView from "../views/Authentication/Login";
+// import LoginView from "@/views/Authentication/Login";
 
 // // Next JS Imports
 // import Head from "next/head";
