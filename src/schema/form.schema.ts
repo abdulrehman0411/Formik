@@ -1,8 +1,5 @@
 import  * as Yup from "yup";
 
-
-
-
 export const form1Schema = Yup.object({
   profileUrl: Yup.string().required("Please enter your profile image"),
   age: Yup.number().min(18).required("Please enter your age"),

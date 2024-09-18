@@ -4,7 +4,7 @@ import Vector from "@/images/Vector.png";
 const Footer = () => {
   return (
     <div>
-      <Image src={Vector} alt={""} height={1000} width={900}></Image>
+      <Image src={Vector} alt={""} height={1200} width={1200}></Image>
     </div>
   );
 };

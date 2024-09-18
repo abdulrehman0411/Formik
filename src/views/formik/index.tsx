@@ -105,8 +105,8 @@ const MultiStepForm: React.FC = () => {
       <div className="ml-4">
         <Logo />
       </div>
-      <div className="flex justify-center items-center mt-24">
-        <div className="w-full max-w-lg mb-24">
+      <div className="flex justify-center items-center mt-12">
+        <div className="w-full max-w-lg">
           <form
             onSubmit={formik.handleSubmit}
             className="bg-white p-6 border-2 border-inherit rounded-2xl border-solid w-full"
